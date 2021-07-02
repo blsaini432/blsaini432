@@ -1,0 +1,264 @@
+
+/*--responsive-design--*/
+
+@media(max-width:1680px) {
+	h1 {
+		margin: 1.9em 0 0.8em;
+	}
+}
+
+@media(max-width:1600px) {
+	h1 {
+		margin: 1em 0 0;
+		font-size: 55px;
+	}
+
+}
+
+@media(max-width:1440px) {
+	h1 {
+		margin: 1.5em 0 0;
+	}
+		margin: 3.5em 0em;
+	}
+	.main-ezulix-form {
+		width: 2 5%;
+	}
+}
+
+@media(max-width:1366px) {
+	h1 {
+		margin: 1em 0 0;
+	}
+	.remember-section-wthree {
+		margin: 1em 0 1.8em;
+	}
+}
+
+@media(max-width:1280px) {
+	.main-ezulix-form {
+		width: 38%;
+	}
+}
+
+@media(max-width:1080px) {
+	.main-ezulix-form {
+		width: 45%;
+	}
+}
+
+@media(max-width:1024px) {
+	h1 {
+		margin: 0.7em 0 0;
+		font-size: 52px;
+		letter-spacing: 6px;
+	}
+	.main-ezulix-form input[type="text"],
+	.main-ezulix-form input[type="password"] {
+		padding: 12px 15px;
+	}
+	.fields-ezulix-agileits {
+		padding: 10px 10px 10px 1px;
+	}
+	.main-ezulix-form .fields-ezulix-agileits:nth-child(1) {
+		margin-bottom: 1em;
+	}
+	.remember-section-wthree {
+		margin: 0.8em 0 1.3em;
+	}
+	.main-ezulix-form {
+		margin: 1.5em auto 0;
+		padding: 2em 2em;
+	}
+	.footer_grid-ezulixls {
+		margin-top: 1.5em;
+	}
+	.main-ezulix-form h2 {
+		font-size: 22px;
+	}
+}
+
+@media(max-width:991px) {}
+
+@media(max-width:900px) {
+	.main-ezulix-form {
+		width: 50%;
+	}
+}
+
+@media(max-width:800px) {
+	h1 {
+		font-size: 49px;
+		letter-spacing: 5px;
+	}
+	.main-ezulix-form h2 {
+		font-size: 20px;
+	}
+	.main-ezulix-form {
+		width: 55%;
+	}
+	h5.sub-hdg-ezulixl {
+		font-size: 14px;
+	}
+}
+
+@media(max-width:768px) {
+	h1 {
+		margin: 2.5em 0 0;
+	}
+	.main-ezulix-form {
+		margin: 2.5em auto 0;
+	}
+	.copyright-ezulix-agile {
+		margin: 4.9em 0em;
+	}
+	.copyright-ezulix-agile p {
+		letter-spacing: 1px;
+	}
+}
+
+@media(max-width:767px) {
+	h1 {
+		margin: .7em 0 0;
+	}
+	.main-ezulix-form {
+		margin: 1.5em auto 0;
+	}
+	.main-ezulix-form {
+		width: 57%;
+	}
+}
+
+@media(max-width:736px) {}
+
+@media(max-width:667px) {
+	.main-ezulix-form {
+		width: 60%;
+	}
+	h1 {
+		font-size: 45px;
+		letter-spacing: 4px;
+	}
+	.fields-ezulix-agileits input[type="text"],
+	.fields-ezulix-agileits input[type="password"] {
+		flex-basis: 88%;
+		-webkit-flex-basis: 88%;
+	}
+	.fields-ezulix-agileits span {
+		flex-basis: 12%;
+		-webkit-flex-basis: 12%;
+	}
+	.main-ezulix-form h2 {
+		font-size: 19px;
+	}
+}
+
+@media(max-width:640px) {
+	.main-ezulix-form input[type="submit"] {
+		font-size: 14px;
+		padding: 0.7em 4em;
+	}
+	.main-ezulix-form input[type="text"],
+	.main-ezulix-form input[type="password"] {
+		font-size: 13.5px;
+	}
+	.fields-ezulix-agileits span {
+		font-size: 16px;
+	}
+}
+
+@media(max-width:600px) {
+	ul.social-icons-agileits-ezulix li a.fa {
+		font-size: 14px;
+		margin: 0 .5em;
+		width: 31px;
+		height: 31px;
+		line-height: 32px;
+	}
+}
+
+@media(max-width:568px) {
+	h1 {
+		font-size: 44px;
+		letter-spacing: 3px;
+	}
+}
+
+@media(max-width:480px) {
+	.main-ezulix-form {
+		width: 75%;
+	}
+	.main-ezulix-form {
+		margin: 1em auto 0;
+	}
+	h1 {
+		margin: .6em 0 0;
+	}
+}
+
+@media(max-width:440px) {
+	.main-ezulix-form {
+		width: 80%;
+		padding: 1.5em 1.5em;
+	}
+}
+
+@media(max-width:414px) {
+	.fields-ezulix-agileits span {
+		flex-basis: 15%;
+		-webkit-flex-basis: 15%;
+	}
+	.fields-ezulix-agileits input[type="text"],
+	.fields-ezulix-agileits input[type="password"] {
+		flex-basis: 85%;
+		-webkit-flex-basis: 85%;
+	}
+	.main-ezulix-form h2 {
+		font-size: 17px;
+		letter-spacing: 1px;
+	}
+	h1 {
+		margin: .5em 0 0;
+		font-size: 42px;
+	}
+}
+
+@media(max-width:384px) {
+	.remember-section-wthree ul li {
+		display: block;
+	}
+	.remember-section-wthree ul li:nth-child(1) {
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+	h5.sub-hdg-ezulixl {
+		line-height: 24px;
+		margin-bottom: .7em;
+	}
+}
+
+@media(max-width:375px) {
+	h1 {
+		letter-spacing: 2px;
+	}
+	.main-ezulix-form {
+		margin: 0.5em auto 0;
+	}
+}
+
+@media(max-width:320px) {
+	h1 {
+		letter-spacing: 1px;
+		font-size: 37px;
+	}
+	.fields-ezulix-agileits span {
+		flex-basis: 18%;
+		-webkit-flex-basis: 18%;
+	}
+	.fields-ezulix-agileits input[type="text"],
+	.fields-ezulix-agileits input[type="password"] {
+		flex-basis: 82%;
+		-webkit-flex-basis: 82%;
+	}
+}
+

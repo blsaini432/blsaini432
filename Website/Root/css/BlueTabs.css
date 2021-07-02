@@ -1,0 +1,52 @@
+﻿body {
+}
+.green {
+border: 1px solid #000;
+}
+.green .ajax__tab_body
+{
+    padding:10px;
+    }
+.green .ajax__tab_header
+{
+    font-family:Tahoma;
+    text-transform:uppercase;
+    font-size:12px;
+    font-weight:bold;
+    background: #000;
+    border-bottom: 1px solid #bbb;
+    border-top:1px solid #000
+    }
+.green .ajax__tab_header .ajax__tab_active .ajax__tab_outer
+{
+    height: 21px;
+    background:#fff;
+    }
+.green .ajax__tab_header .ajax__tab_active .ajax__tab_tab
+{
+    background:#fff;
+    height: 28px;
+    padding: 5px 7px 5px 7px;
+    margin: 0px;
+    border:0;
+    color:#333;
+    }
+.green .ajax__tab_header .ajax__tab_active .ajax__tab_inner
+{
+    padding-left: 3px;
+    background:#fff;
+    border-right:1px solid #000;
+    border-left:1px solid #000;
+    border-bottom:0;
+    }
+.green .ajax__tab_tab
+{
+    padding:7px;
+    color:#fff;
+    border-right:1px solid #000;
+    border-left:1px solid #000;
+    }
+    #Tabs{ float:left;}
+#Tabs * {box-sizing: content-box !important;}
+.mtddd {background:#e9e9e9;}
+

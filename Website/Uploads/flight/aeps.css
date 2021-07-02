@@ -1,0 +1,79 @@
+﻿@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    vertical-align: baseline;
+    background: #fff;
+    color: #444;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-size: 15px;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    color: #212121;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+    a:active, a:hover, a:focus {
+        text-decoration: none;
+    }
+
+    a:active, a:hover, a:focus {
+        outline: 0 none;
+    }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+.clear:after {
+    clear: both;
+    content: "";
+    display: block;
+}

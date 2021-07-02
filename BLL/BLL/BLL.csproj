@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8C314E3F-CF82-4C5F-BAD2-8634B5C015FF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BLL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DAL\DAL\bin\Debug\BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\DAL\DAL\bin\Debug\DAL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cls_Universal.cs" />
+    <Compile Include="MLM\clsMLM_CapTier1Tier2.cs" />
+    <Compile Include="MLM\clsMLM_ConditionDirect.cs" />
+    <Compile Include="MLM\clsMLM_ConditionPair.cs" />
+    <Compile Include="MLM\clsMLM_ConditionPairMaster.cs" />
+    <Compile Include="MLM\clsMLM_ConditionPool.cs" />
+    <Compile Include="MLM\clsMLM_ConditionReward.cs" />
+    <Compile Include="MLM\clsMLM_ConditionRewardMaster.cs" />
+    <Compile Include="MLM\clsMLM_ConditionSpill.cs" />
+    <Compile Include="MLM\clsMLM_Deduction.cs" />
+    <Compile Include="MLM\clsMLM_Download.cs" />
+    <Compile Include="MLM\clsMLM_DownloadType.cs" />
+    <Compile Include="MLM\clsMLM_EWalletBalance.cs" />
+    <Compile Include="MLM\clsMLM_EWalletTransaction.cs" />
+    <Compile Include="MLM\clsMLM_FundRequest.cs" />
+    <Compile Include="MLM\clsMLM_IncomeDirect.cs" />
+    <Compile Include="MLM\clsMLM_IncomePayout.cs" />
+    <Compile Include="MLM\clsMLM_IncomePayoutType.cs" />
+    <Compile Include="MLM\clsMLM_IncomeType.cs" />
+    <Compile Include="MLM\clsMLM_MemberBanker.cs" />
+    <Compile Include="MLM\clsMLM_MemberMaster.cs" />
+    <Compile Include="MLM\clsMLM_MemberMasterLoginDetail.cs" />
+    <Compile Include="MLM\clsMLM_MemberNominee.cs" />
+    <Compile Include="MLM\clsMLM_MemberPanCard.cs" />
+    <Compile Include="MLM\clsMLM_MemberTDS.cs" />
+    <Compile Include="MLM\clsMLM_MemberTopUp.cs" />
+    <Compile Include="MLM\clsMLM_MemberTree.cs" />
+    <Compile Include="MLM\clsMLM_MenuReseller.cs" />
+    <Compile Include="MLM\clsMLM_MenuSuperAdmin.cs" />
+    <Compile Include="MLM\clsMLM_Msg.cs" />
+    <Compile Include="MLM\clsMLM_MsgKeywords.cs" />
+    <Compile Include="MLM\clsMLM_MsgLabel.cs" />
+    <Compile Include="MLM\clsMLM_MsgLabelRelation.cs" />
+    <Compile Include="MLM\clsMLM_MsgSendTo.cs" />
+    <Compile Include="MLM\clsMLM_MsgTemplete.cs" />
+    <Compile Include="MLM\clsMLM_MsgType.cs" />
+    <Compile Include="MLM\clsMLM_Package.cs" />
+    <Compile Include="MLM\clsMLM_Performance.cs" />
+    <Compile Include="MLM\clsMLM_PinMaster.cs" />
+    <Compile Include="MLM\clsMLM_PinRequest.cs" />
+    <Compile Include="MLM\clsMLM_PinRequestDetail.cs" />
+    <Compile Include="MLM\clsMLM_PinTransfered.cs" />
+    <Compile Include="MLM\clsMLM_PinUsed.cs" />
+    <Compile Include="MLM\clsMLM_PinWalletBalance.cs" />
+    <Compile Include="MLM\clsMLM_PinWalletTransaction.cs" />
+    <Compile Include="MLM\clsMLM_Royalty.cs" />
+    <Compile Include="MLM\clsMLM_RWalletBalance.cs" />
+    <Compile Include="MLM\clsMLM_RWalletTransaction.cs" />
+    <Compile Include="MLM\clsMLM_WalletBinaryDetail.cs" />
+    <Compile Include="MLM\clsMLM_Withdrawal.cs" />
+    <Compile Include="MLM\clsMLM_Mix.cs" />
+    <Compile Include="MLM\clsMLM_InvoiceType.cs" />
+    <Compile Include="MLM\clsMLM_Franchise.cs" />
+    <Compile Include="MLM\clsMLM_Stock.cs" />
+    <Compile Include="MLM\clsMLM_MenuAdmin.cs" />
+    <Compile Include="MLM\clsMLM_MenuMember.cs" />
+    <Compile Include="MLM\clsMLM_MenuFranchise.cs" />
+    <Compile Include="MLM\clsMLM_FranchiseLoginDetail.cs" />
+    <Compile Include="MLM\clsMLM_Income_Repurchase.cs" />
+    <Compile Include="MLM\clsMLM_Income_Group.cs" />
+    <Compile Include="MLM\clsMLM_Income_Franchise_Level.cs" />
+    <Compile Include="MLM\clsMLM_MenuDistributor.cs" />
+    <Compile Include="MLM\clsMLM_MenuSuperDistributor.cs" />
+    <Compile Include="MLM\clsMLM_MenuMasterDistributor.cs" />
+    <Compile Include="MLM\clsMLM_MenuBusinessPartner.cs" />
+    <Compile Include="Recharge\clsRecharge_Circle.cs" />
+    <Compile Include="Recharge\clsRecharge_AddOnNumber.cs" />
+    <Compile Include="Recharge\clsRecharge_History.cs" />
+    <Compile Include="Recharge\clsRecharge_Operator.cs" />
+    <Compile Include="Recharge\clsRecharge_PromoCode.cs" />
+    <Compile Include="Recharge\clsRecharge_ServiceType.cs" />
+    <Compile Include="Recharge\clsRecharge_API.cs" />
+    <Compile Include="Recharge\clsRecharge_TariffPlan.cs" />
+    <Compile Include="Recharge\clsRecharge_UtilityCharge.cs" />
+    <Compile Include="Recharge\clsRecharge_Vendor.cs" />
+    <Compile Include="Recharge\clsRecharge_Coupan.cs" />
+    <Compile Include="Recharge\clsRecharge_CoupanCategory.cs" />
+    <Compile Include="Recharge\clsRecharge_CoupanCode.cs" />
+    <Compile Include="Recharge\clsRecharge_CircleCode.cs" />
+    <Compile Include="Recharge\clsRecharge_OperatorCode.cs" />
+    <Compile Include="Recharge\clsRecharge_Profile.cs" />
+    <Compile Include="Recharge\clsRecharge_ProfileFeesShare.cs" />
+    <Compile Include="Recharge\clsRecharge_Dispute.cs" />
+    <Compile Include="Recharge\clsRecharge_PRAN.cs" />
+    <Compile Include="Recharge\clsRecharge_PRANNominee.cs" />
+    <Compile Include="Recharge\clsRecharge_Student.cs" />
+    <Compile Include="Recharge\clsRecharge_Earning.cs" />
+    <Compile Include="Shopping\clsCity.cs" />
+    <Compile Include="Shopping\clsCountry.cs" />
+    <Compile Include="Shopping\clsState.cs" />
+    <Compile Include="Shopping\clsProductCategory.cs" />
+    <Compile Include="Shopping\clsPage.cs" />
+    <Compile Include="Shopping\clsBrand.cs" />
+    <Compile Include="Shopping\clsCustomer.cs" />
+    <Compile Include="Shopping\clsCustomerLoginDetail.cs" />
+    <Compile Include="Shopping\clsPageHit.cs" />
+    <Compile Include="Shopping\clsProduct.cs" />
+    <Compile Include="Shopping\clsProductBelongsTO.cs" />
+    <Compile Include="Shopping\clsProductFeature.cs" />
+    <Compile Include="Shopping\clsProductFeatureValue.cs" />
+    <Compile Include="Shopping\clsProductImage.cs" />
+    <Compile Include="Shopping\clsWebsite.cs" />
+    <Compile Include="Shopping\clsProductFeatureCategory.cs" />
+    <Compile Include="Shopping\clsAds.cs" />
+    <Compile Include="Shopping\clsAdsClickAndView.cs" />
+    <Compile Include="Shopping\clsBanner.cs" />
+    <Compile Include="Shopping\clsColor.cs" />
+    <Compile Include="Shopping\clsEmployee.cs" />
+    <Compile Include="Shopping\clsEmployeeLoginDetail.cs" />
+    <Compile Include="Shopping\clsEmployeeType.cs" />
+    <Compile Include="Shopping\clsFAQ.cs" />
+    <Compile Include="Shopping\clsFAQCategory.cs" />
+    <Compile Include="Shopping\clsMenu.cs" />
+    <Compile Include="Shopping\clsNews.cs" />
+    <Compile Include="Shopping\clsOrder.cs" />
+    <Compile Include="Shopping\clsOrderDetail.cs" />
+    <Compile Include="Shopping\clsOrderShipping.cs" />
+    <Compile Include="Shopping\clsPhoto.cs" />
+    <Compile Include="Shopping\clsPhotoCategory.cs" />
+    <Compile Include="Shopping\clsProductColor.cs" />
+    <Compile Include="Shopping\clsRatingAndReview.cs" />
+    <Compile Include="Shopping\clsReviewAbuse.cs" />
+    <Compile Include="Shopping\clsReviewHelpful.cs" />
+    <Compile Include="Shopping\clsVideo.cs" />
+    <Compile Include="Shopping\clsVideoCategory.cs" />
+    <Compile Include="Shopping\clsWishList.cs" />
+    <Compile Include="Inventory\cls_OrderMsg.cs" />
+    <Compile Include="Inventory\cls_PurchaseOrder.cs" />
+    <Compile Include="Inventory\cls_PurchaseOrderDetail.cs" />
+    <Compile Include="Inventory\cls_Stock.cs" />
+    <Compile Include="Inventory\cls_Supplier.cs" />
+    <Compile Include="Inventory\cls_SupplierType.cs" />
+    <Compile Include="Inventory\cls_Tax.cs" />
+    <Compile Include="Inventory\cls_Transporter.cs" />
+    <Compile Include="Inventory\cls_Unit.cs" />
+    <Compile Include="Inventory\cls_UnitConversionDetail.cs" />
+    <Compile Include="Inventory\cls_WareHouse.cs" />
+    <Compile Include="Shopping\clsCompany.cs" />
+    <Compile Include="MLM\clsMLM_BankerMaster.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shopping\clsOrderPaymentl.cs" />
+    <Compile Include="TSS\clsTSS_Dept.cs" />
+    <Compile Include="TSS\clsTSS_Message.cs" />
+    <Compile Include="TSS\clsTSS_Priority.cs" />
+    <Compile Include="TSS\clsTSS_Ticket.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BLL.dll" />
+    <Content Include="DAL.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,385 @@
+.popup-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	max-width: 500px;
+	min-width: 320px;
+	height: auto;
+	z-index: 2000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+#popup-modal-form .container {
+	width: 500px;
+}
+.md-show {
+	visibility: visible;
+}
+.popup-modal {
+	-webkit-perspective: 1300px;
+	-moz-perspective: 1300px;
+	perspective: 1300px;
+}
+
+.popup-modal-content {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: translateZ(-3000px) rotateY(90deg);
+	-moz-transform: translateZ(-3000px) rotateY(90deg);
+	-ms-transform: translateZ(-3000px) rotateY(90deg);
+	transform: translateZ(-3000px) rotateY(90deg);
+	opacity: 0;
+}
+.popup-modal-detail {
+	padding: 3px 0;
+	display: -webkit-box;
+}
+.md-show .popup-modal-content {
+	-webkit-animation: slit .7s forwards ease-out;
+	-moz-animation: slit .7s forwards ease-out;
+	animation: slit .7s forwards ease-out;
+}
+
+@-webkit-keyframes slit {
+	50% { -webkit-transform: translateZ(-250px) rotateY(89deg); opacity: .5; -webkit-animation-timing-function: ease-out;}
+	100% { -webkit-transform: translateZ(0) rotateY(0deg); opacity: 1; }
+}
+
+@-moz-keyframes slit {
+	50% { -moz-transform: translateZ(-250px) rotateY(89deg); opacity: .5; -moz-animation-timing-function: ease-out;}
+	100% { -moz-transform: translateZ(0) rotateY(0deg); opacity: 1; }
+}
+
+@keyframes slit {
+	50% { transform: translateZ(-250px) rotateY(89deg); opacity: 1; animation-timing-function: ease-in;}
+	100% { transform: translateZ(0) rotateY(0deg); opacity: 1; }
+}
+
+
+.now_button {
+	background: #f58634;
+	border: none;
+	color: #fff;
+	padding: 9px 20px;
+	font-weight: 500;
+	font-size: 15px;
+}
+.now_button:hover {
+	background: #00afef;
+}
+.popup-header .popup-modal-close {
+	font-size: 14px;
+	padding: 5px 15px;
+	margin-top: -6px;
+	color: #fff;
+	background: #00afef;
+	float: right;
+	border-radius: 2px;
+	transition: 0.5s;
+}
+.popup-header .popup-modal-close:hover {
+		background: #F58634;
+}
+
+.popup-modal-content {
+	background: #fff;
+	display: flow-root;
+	padding: 20px;
+	clear: both;
+	position: relative;
+	border-radius: 6px;
+}
+.popup-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0.61);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show ~ .popup-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+.popup-modal-content h3 {
+	font-weight: 400;
+	font-size: 20px;
+	color: #484747;
+	font-family: "Open Sans", sans-serif;
+	margin: 0 0 30px;
+}
+.popup-form-detail .popup-modal-right {
+	text-align: right;
+}
+
+.popup-form-detail label {
+	color: #4e4e4e;
+	font-size: 15px;
+	font-weight: 500;
+}
+.total-amount-box .popup-modal-detail {
+	background: #f0f0f0;
+	position: relative;
+	clear: both;
+	display: flow-root;
+	padding: 5px 0;
+	margin: 18px 0 10px;
+	transition: 0.5s;
+	border-radius: 3px;
+}
+.total-amount-box .popup-modal-detail:hover {
+	background: #00afef;
+}
+
+.total-amount-box label {
+	font-size: 17px;
+	font-weight: 600;
+	color: #595959;
+	transition: 0.5s;
+}
+.total-amount-box:hover label {
+	color: #fff;
+}
+.popup-modal-detail .coupon-box {
+	float: left;
+}
+.popup-modal-detail .coupon-box .coupon-popup-button {
+	color: #00afef;
+	font-weight: 500;
+	font-size: 17px;
+}
+.popup-modal-detail .coupon-box .coupon-popup-button:hover {
+	color: #4e4e4e;
+}
+.popup-modal-detail .apply-button {
+	float: right;
+}
+.popup-modal-content .apply-button button {
+	display: block;
+	margin: 0 auto;
+	float: right;
+	padding: 7px 10px;
+	background: #00afef;
+	color: #fff;
+	font-size: 15px;
+	border-radius: 4px;
+	font-weight: 500;
+	transition: 0.5s;
+}
+.popup-modal-content .apply-button button:hover {
+	 background: #f58634;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+/* -------------------------------- 
+
+xpopup 
+
+-------------------------------- */
+.coupon-popup {
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(94, 110, 141, 0.9);
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+	-moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+	transition: opacity 0.3s 0s, visibility 0s 0.3s;
+	z-index: 99999;
+}
+
+.coupon-popup.is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0s;
+}
+.coupon-popup-modul {
+	position: relative;
+	width: 100%;
+	max-width: 500px;
+	margin: 4em auto;
+	background: #FFF;
+	border-radius: .25em .25em .4em .4em;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	-webkit-transform: translateY(-40px);
+	-moz-transform: translateY(-40px);
+	-ms-transform: translateY(-40px);
+	-o-transform: translateY(-40px);
+	transform: translateY(-40px);
+	-webkit-backface-visibility: hidden;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	padding: 20px;
+}
+.coupon-popup .container{ width:500px;}
+.coupon-popup-modul p {
+  padding: 3em 1em;
+}
+
+.coupon-popup-modul .coupon-popup-close-button {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 34px;
+	height: 34px;
+	background: #00afef;
+	color: #fff;
+	border-radius: 9%;
+	line-height: 30px;
+	font-size: 21px;
+	text-align:center;
+}
+.coupon-popup-modul .coupon-popup-close-button:hover {
+	transform: rotate(360deg);
+	background: #000;
+}
+.is-visible .coupon-popup-modul {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+}
+.coupon-popup-left .apply-code-title {
+	font-size: 13px;
+	color: #999;
+	font-weight: 400;
+}
+.coupon-popup-right .apply-button {
+	color: #00afef;
+	font-size: 13px;
+	font-weight: 400;
+	background: transparent;
+}
+.coupon-popup-right {
+	text-align: center;
+}
+.coupon-popup-modul .coupon-code-button {
+	border: 1px solid #d1d1d1;
+	background: #f2f2f2;
+	margin: 10px 41px 10px 0px;
+	padding: 6px;
+	border-radius: 4px;
+}
+.coupon-code-button input {
+	background: transparent;
+	color: #00afef;
+	font-weight: 400;
+}
+/* -------------------------------- 
+
+              recharge Table
+-------------------------------- */
+.price-headitn {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	padding-bottom: 10px;
+}
+.operator-plan-bg {
+	background: #fff;
+}
+.operator-plan-left {
+    float: left;
+    width: 26%;
+    background: #f2f2f2;
+    margin-top: 35px;
+}
+.operator-plan-right {
+	width: 100%;
+}
+.my-custom-scrollbar {
+	position: relative;
+	height: 362px;
+	overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
+.operator-plan-left td {
+    display: grid;
+    margin: 9px 0px 11px;
+}
+.operator-plan-left td a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    background: #00afef;
+    padding: 10px 5px;
+    transition: 0.5s;
+}
+.operator-plan-left td a:hover {
+	color: #fff;
+	background: #000;
+}
+.price-table-title {
+	color: #00afef !important;
+}
+

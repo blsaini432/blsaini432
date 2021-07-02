@@ -1,0 +1,388 @@
+/*
+Author URL: http://ezulix.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+*/
+
+
+/*--reset--*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fields-ezulix-agileitset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*--start editing from here--*/
+
+a {
+	text-decoration: none;
+}
+.txt-rt {
+	text-align: right;
+}
+/* text align right */
+
+.txt-lt {
+	text-align: left;
+}
+/* text align left */
+
+.txt-center {
+	text-align: center;
+}
+/* text align center */
+
+.float-rt {
+	float: right;
+}
+/* float right */
+
+.float-lt {
+	float: left;
+}
+/* float left */
+
+.clear {
+	clear: both;
+}
+/* clear float */
+
+.pos-relative {
+	position: relative;
+}
+/* Position Relative */
+
+.pos-absolute {
+	position: absolute;
+}
+/* Position Absolute */
+
+.vertical-base {
+	vertical-align: baseline;
+}
+/* vertical align baseline */
+
+.vertical-top {
+	vertical-align: top;
+}
+/* vertical align top */
+
+nav.vertical ul li {
+	display: block;
+}
+/* vertical menu */
+
+nav.horizontal ul li {
+	display: inline-block;
+}
+/* horizontal menu */
+
+img {
+	max-width: 100%;
+}
+/*--end reset--*/
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 100%;
+	background: url(../images/banner.jpg)no-repeat center top;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+}
+body a {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.footer_grid-ezulixls {
+	background: rgba(255, 255, 255, 0.05);
+	border: 2px solid rgba(255, 255, 255, 0.10);
+	padding: 1em 1em;
+	margin-top: 2em;
+}
+h5.sub-hdg-ezulixl {
+	color: #00afef;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+	text-transform: capitalize;
+	margin-bottom: 1em;
+	font-family: 'Montserrat', sans-serif;
+}
+ul.social-icons-agileits-ezulix li {
+	display: inline-block;
+}
+ul.social-icons-agileits-ezulix li a.fa {
+	font-size: 16px;
+	margin: 0 .7em;
+	width: 35px;
+	height: 35px;
+	background: rgba(255, 255, 255, 0.10);
+	line-height: 37px;
+	color: #ffffff;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+ul.social-icons-agileits-ezulix li a.fa.fa-facebook:hover {
+	background: #3b5998;
+}
+ul.social-icons-agileits-ezulix li a.fa.fa-twitter:hover {
+	background: #1da1f2;
+}
+ul.social-icons-agileits-ezulix li a.fa.fa-google-plus:hover {
+	background: #dd4b39;
+}
+ul.social-icons-agileits-ezulix li a.fa:hover {
+	color: #fff;
+}
+/*--background--*/
+
+h1 {
+	font-size: 65px;
+	text-transform: capitalize;
+	color: #fff;
+	letter-spacing: 7px;
+	margin: 2.3em 0 0.8em;
+	font-weight: 400;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+}
+/*--//background--*/
+
+
+/*--main-ezulix-form--*/
+
+.main-ezulix-form {
+	margin: 6em auto 0;
+	width:25%;
+	background: rgba(228, 26, 26, 0.7);
+	padding: 2.3em 2em;
+}
+.main-ezulix-form h2 {
+	color: #fff;
+	font-weight: 100;
+	font-size: 25px;
+	margin-bottom: 1em;
+	letter-spacing: 2px;
+	font-family: 'Montserrat', sans-serif;
+}
+.main-ezulix-form input[type="text"], .main-ezulix-form input[type="password"] {
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	padding: 12px 20px;
+	background: rgba(0, 0, 0, 0.54);
+	box-sizing: border-box;
+	letter-spacing: 1px;
+	font-size: 14px;
+	color: #fff;
+	border: none;
+	outline: none;
+}
+.main-ezulix-form .fields-ezulix-agileits:nth-child(1) {
+	margin-bottom: 1.3em;
+}
+.main-ezulix-form input[type="submit"] {
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	border: none;
+	color: #fff;
+	background: #00afef;
+	padding: 10px;
+	outline: none;
+	cursor: pointer;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.main-ezulix-form input[type="submit"]:hover {
+	background: #fff;
+	color: #000;
+}
+.fields-ezulix-agileits {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;
+	padding: 12px 12px 12px 4px;
+	background: rgba(132, 132, 132, 0.27);
+}
+.fields-ezulix-agileits span {
+	flex-basis: 10%;
+	-webkit-flex-basis: 10%;
+	display: inline-block;
+	font-size: 17px;
+	color: #fff;
+	line-height: 40px;
+}
+.fields-ezulix-agileits input[type="text"], .fields-ezulix-agileits input[type="password"] {
+	flex-basis: 90%;
+	-webkit-flex-basis: 90%;
+}
+/*--//main-ezulix-form--*/
+
+
+/*-- checkbox --*/
+
+.remember-section-wthree {
+	margin: 1.5em 0 2em;
+}
+.anim {
+	position: relative;
+	display: inline-block;
+	margin: 6px 0px 0px 2px;
+}
+label.anim span, .remember-section-wthree a {
+	color: #f7f3f3;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	display: inline;
+	text-transform: capitalize;
+}
+.remember-section-wthree a {
+	text-decoration: none;
+}
+.remember-section-wthree a:hover {
+	text-decoration: none;
+	color: #00afef;
+}
+.remember-section-wthree ul li {
+	display: inline-block;
+}
+.remember-section-wthree ul li:nth-child(1) {
+	margin-right: 36px;
+}
+input.checkbox {
+	background: #00afef;
+	cursor: pointer;
+	width: 1.2em;
+	height: 1.2em;
+}
+input.checkbox:before {
+	content: "";
+	position: absolute;
+	width: 1.2em;
+	height: 1.2em;
+	background: inherit;
+	cursor: pointer;
+}
+input.checkbox:after {
+	content: "";
+	transition: .4s ease-in-out;
+	position: absolute;
+	top: -1px;
+	left: 4px;
+	z-index: 1;
+	width: 1.1em;
+	height: 1.1em;
+	margin-top: 4px;
+	border: 1px solid #fff;
+}
+input.checkbox:checked:after {
+	transform: rotate(-45deg);
+ height: .5rem;
+	border-color: #fff;
+	border-top-color: transparent;
+	border-right-color: transparent;
+}
+.anim input.checkbox:checked:after {
+	transform: rotate(-45deg);
+ height: .5rem;
+	border-color: transparent;
+	border-right-color: transparent;
+	animation: .4s rippling .4s ease;
+	animation-fill-mode: forwards;
+}
+ @keyframes rippling {
+ 50% {
+ border-left-color: #fff;
+}
+ 100% {
+ border-bottom-color: #000;
+ border-left-color: #000;
+}
+}
+
+
+/*-- //checkbox --*/
+
+
+::-webkit-input-placeholder {
+ color: #fff;
+}
+
+:-moz-placeholder {
+	/* Firefox 18- */
+	color: #fff;
+}
+
+::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #fff;
+}
+
+:-ms-input-placeholder {
+ color: #fff;
+}
+.login-login {
+	/* padding: 0; */
+	padding: 0 0 10px 0;
+	text-align: center;
+}
+.login-login {
+	text-align: center;
+	width: 150px;
+	display: inline-block;
+}
+.back-button {
+	background: #00afef;
+	color: #fff;
+	padding: 11px 20px;
+	margin-left: 5px;
+}
+.back-button:hover {
+	background: #fff;
+	color: #000;
+	padding: 11px 20px;
+}
+

@@ -1,0 +1,328 @@
+﻿/*#region tabcontainer start */
+.ajax__tab_inner a
+{
+    color: #1a1d1f;
+    text-decoration: none;
+}
+.fancy-green .ajax__tab_header
+{
+    background: url("../images/green_bg_Tab.gif") repeat-x;
+    cursor: pointer;
+}
+.fancy-green .ajax__tab_hover .ajax__tab_outer, .fancy-green .ajax__tab_active .ajax__tab_outer
+{
+    background: url("../images/green_left_Tab.gif") no-repeat left top;
+}
+.fancy-green .ajax__tab_hover .ajax__tab_inner, .fancy-green .ajax__tab_active .ajax__tab_inner
+{
+    background: url("../images/green_right_Tab.gif") no-repeat right top;
+}
+.fancy .ajax__tab_header
+{
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+    font-family: sans-serif;
+}
+.fancy .ajax__tab_active .ajax__tab_outer, .fancy .ajax__tab_header .ajax__tab_outer, .fancy .ajax__tab_hover .ajax__tab_outer
+{
+    height: 46px;
+}
+.fancy .ajax__tab_active .ajax__tab_inner, .fancy .ajax__tab_header .ajax__tab_inner, .fancy .ajax__tab_hover .ajax__tab_inner
+{
+    height: 46px;
+    margin-left: 16px; /* offset the width of the left image */
+}
+.fancy .ajax__tab_active .ajax__tab_tab, .fancy .ajax__tab_hover .ajax__tab_tab, .fancy .ajax__tab_header .ajax__tab_tab
+{
+    margin: 16px 16px 0px 0px;
+}
+.fancy .ajax__tab_hover .ajax__tab_tab, .fancy .ajax__tab_active .ajax__tab_tab
+{
+    color: #fff;
+}
+.fancy .ajax__tab_body
+{
+    font-family: Arial;
+    font-size: 10pt;
+    border-top: 0;
+    border: 1px solid #999999;
+    padding: 8px;
+    background-color: #ffffff;
+    height: 500px;
+}
+/*#endregion tabcontainer end */
+
+table.leftbox
+{
+    width: 100%;
+    padding: 5% 2%;
+    background: #ffffff;
+    border: unset;
+}
+
+table.leftbox tr
+{
+    border-bottom: 1px solid #1b14142e;
+    margin-bottom: 1px;
+    display: block;
+}
+
+div#ctl00_ContentPlaceHolder1_dsfdfdsfdssdfs_TabContainer1_TabPanel1
+{
+    padding: 2% 2%;
+}
+
+.containe.rreport
+{
+    float: right;
+    width: 60%;
+}
+
+ul.nav.navbar-nav li
+{
+    background: unset;
+}
+
+.gridview
+{
+    background-color: #FFFFFF;
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+
+.gridview th
+{
+    background: #3986ac;
+    padding: 5px;
+    color: #ffffff;
+    border: 1px solid #FFFFFF;
+}
+
+.gridview th a
+{
+    color: #003300;
+    text-decoration: none;
+}
+
+.gridview th a:hover
+{
+    color: #003300;
+    text-decoration: underline;
+}
+
+.gridview td
+{
+    color: #333333;
+    padding: 4px;
+    border: 1px solid #FFFFFF;
+}
+
+.gridview tr.even td
+{
+    background: #000000;
+}
+
+.gridview td a
+{
+    color: #0368A2;
+    text-decoration: underline;
+}
+
+.gridview td a:hover
+{
+    color: #000000;
+}
+
+.gridview caption
+{
+    background-color: lightblue;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gridview tr:nth-child(even)
+{
+    background: #F8F8F8;
+}
+
+.gridview tr:nth-child(odd)
+{
+    background: #E6E4E4;
+}
+/*#endregion Grid view end*/
+
+
+
+/*#region Form start*/
+.Table
+{
+    width: 40%;
+    background: #ccc;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.Table td
+{
+    background: #fff;
+    padding: 5px;
+}
+
+.Table td.Padding
+{
+    padding: 0;
+}
+
+.Table table.nopadding td
+{
+    padding: 0 0 0 0;
+}
+
+.Table th
+{
+    background: #f5f5f5;
+    padding: 5px;
+}
+
+.Table .Txtbox
+{
+    /* width: 100%; */
+    padding: 5px 3px;
+    border: #ddd solid 1px;
+    background: #fff;
+}
+
+.Table .TxtboxNum
+{
+    width: 80px;
+    padding: 3px;
+    border: #ddd solid 1px;
+    background: #fff;
+}
+
+.Table .Submitbtn
+{
+    margin-left: 0;
+}
+
+.Table th.lalign
+{
+    text-align: left;
+}
+
+.Table span
+{
+    color: red;
+}
+/*#endregion Form end*/
+
+.Txtbox:focus, .Txtarea:focus, .TxtboxNum:focus
+{
+    background: #FFE2C6;
+    border: #c4c4c4 solid 1px;
+}
+
+.buttons
+{
+    width: 100%;
+    background-color: #fff;
+}
+
+input[type="submit"]
+{
+    /* height: 28px; */
+    text-align: center;
+    background-color: #337ab7;
+    color: #ffffff !important;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 11px 1px #88888870;
+    cursor: pointer;
+    outline: navajowhite;
+    padding: 6px 10px;
+}
+
+
+
+ul
+{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.containe.rreport li
+{
+    background: url("../images/marker.gif")no-repeat 0px 15px;
+    padding: 0px 0px 5px 12px;
+    font-size: 13px;
+    line-height: 35px;
+    text-transform: initial;
+    color: green;
+    color: #1d2112;
+    font-weight: 700;
+}
+
+.dropdownlist
+{
+    color: black;
+    background-color: whitesmoke;
+    width: 190px;
+    padding: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.Table.regpage, #ctl00_ContentPlaceHolder1_dsfdfdsfdssdfs_TabContainer1_TabPanel2_dv_RegOtp, .protab, .centertab, .traamt
+{
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.Table.regpage td, #ctl00_ContentPlaceHolder1_dsfdfdsfdssdfs_TabContainer1_TabPanel2_dv_RegOtp td
+{
+    background: #fff;
+    padding: 5px 10px;
+    width: 40%; /* float: left; */ /* display: block; */
+}
+
+div#ctl00_ContentPlaceHolder1_dsfdfdsfdssdfs_TabContainer1_TabPanel3_dv_NewMpin, div#ctl00_ContentPlaceHolder1_dsfdfdsfdssdfs_TabContainer1_TabPanel3_dv_NewMpinReset
+{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.div#ctl00_ContentPlaceHolder1_dsfdfdsfdssdfs_TabContainer1_TabPanel3_dv_Profile td, div#ctl00_ContentPlaceHolder1_dsfdfdsfdssdfs_TabContainer1_TabPanel3_dv_NewMpin td, div#ctl00_ContentPlaceHolder1_dsfdfdsfdssdfs_TabContainer1_TabPanel3_dv_NewMpinReset td
+{
+    width: 58% !important;
+}
+
+.nben td
+{
+    background: #fff;
+    padding: 5px;
+    width: 200px;
+}
+
+.modalBackground
+    {
+        background-color: Black;
+        filter: alpha(opacity=90);
+        opacity: 0.8;
+    }
+    .modalPopup
+    {
+        background-color: #FFFFFF;
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        
+        padding-left: 10px;
+        width: 270px;
+        height: 185px;
+    }

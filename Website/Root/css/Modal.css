@@ -1,0 +1,74 @@
+﻿body
+{
+}
+
+.popupPanel
+{
+    width: 350px;
+    height: 150px; /*background-color: #FFFFD5;*/
+}
+.Modalbg
+{
+    /*  position: absolute;             z-index: 100;             top: 0px;             left: 0px;                       -moz-opacity: 0.6;*/
+    background-color: Gray;
+    filter: alpha(opacity=50);
+    opacity: 0.7;
+}
+
+.accountverifymsgpopup
+{
+    width: 350px;
+    height: 490px;
+}
+
+
+.MyTabStyle .ajax__tab_header
+{
+    font-family: "Helvetica Neue" , Arial, Sans-Serif;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+}
+
+.MyTabStyle .ajax__tab_header .ajax__tab_outer
+{
+    border-color: #222;
+    color: #222;
+    padding-left: 10px;
+    margin-right: 3px;
+    border: solid 1px #d7d7d7;
+}
+.MyTabStyle .ajax__tab_header .ajax__tab_inner
+{
+    border-color: #666;
+    color: #666;
+    padding: 3px 10px 2px 0px;
+}
+.MyTabStyle .ajax__tab_hover .ajax__tab_outer
+{
+    background-color: #7243ab;
+}
+.MyTabStyle .ajax__tab_hover .ajax__tab_inner
+{
+    color: #fff;
+}
+.MyTabStyle .ajax__tab_active .ajax__tab_outer
+{
+    border-bottom-color: #ffffff;
+    background-color: #7243ab;
+}
+.MyTabStyle .ajax__tab_active .ajax__tab_inner
+{
+    color: #000;
+    border-color: #333;
+}
+.MyTabStyle .ajax__tab_body
+{
+    font-family: verdana,tahoma,helvetica;
+    font-size: 10pt;
+    background-color: #fff;
+    border-top-width: 0;
+    border: solid 1px #d7d7d7;
+    border-top-color: #ffffff;
+}

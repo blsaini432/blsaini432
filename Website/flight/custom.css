@@ -1,0 +1,272 @@
+﻿/*#region ModalPopUpStart */
+.modalDialog {
+    text-align: left;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8); /* IE*/
+    filter: alpha(opacity=70);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+    background: #000000\0/;
+    z-index: 99999;
+    opacity: 1;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+    .modalDialog:target {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+.ModalInner {
+    float: left;
+    min-height: 190px;
+    min-width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #F1E4C4;
+    background: -moz-linear-gradient(#F1E4C4, #F1E4C4);
+    background: -webkit-linear-gradient(#F1E4C4, #F1E4C4);
+    background: -o-linear-gradient(#F1E4C4, #F1E4C4);
+}
+
+    .ModalInner input[title="Close"] {
+        background: #606061;
+        color: #FFFFFF;
+        line-height: 25px;
+        position: absolute;
+        right: -12px;
+        text-align: center;
+        top: -10px;
+        width: 26px;
+        height: 26px;
+        text-decoration: none;
+        font-weight: bold;
+        border: solid 1px rgb(82, 73, 73);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -moz-box-shadow: 1px 1px 3px #000;
+        -webkit-box-shadow: 1px 1px 3px #000;
+        box-shadow: 1px 1px 3px #000;
+        cursor: pointer;
+    }
+
+    .ModalInner a:hover {
+        background: #00d9ff;
+    }
+
+.modal_left {
+    color: #565656;
+    display: inline;
+    float: left;
+    font-size: 13px;
+    line-height: 30px;
+    padding-left: 14%;
+    text-align: right;
+    width: 23%;
+}
+
+.modal_right {
+    color: #725616;
+    display: inline;
+    float: left;
+    line-height: 30px;
+    margin-left: 3%;
+    width: 57%;
+}
+
+.model_selectbox {
+    background-color: #E9EAEB;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 1px 1px 3px #CCCCCC;
+    color: #565656;
+    font-family: DroidSansRegular, "Lucida Sans Unicode", "Lucida Grande",sans-serif;
+    font-size: 12px;
+    height: 20px;
+    margin-top: 5px;
+    min-width: 200px;
+    width: auto;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.UpperCase {
+    text-transform: uppercase;
+}
+/*#endregion */
+
+/*#region PassagnerStepApp */
+.step-app {
+    display: block;
+}
+
+    .step-app ul {
+        margin: 0;
+        padding: 0;
+        display: -webkit-box;
+        border-radius: 3px 3px 0 0;
+        overflow: hidden;
+    }
+
+        .step-app ul li {
+            list-style: none;
+            flex: 1;
+        }
+
+            .step-app ul li span {
+                padding: 14px 45px;
+                display: inline-block;
+                margin-right: 15px;
+                color: #f4f4f4;
+                background-color: #3cb371;
+                width: 99%;
+            }
+/*#endregion */
+
+/*#region FlightListGridStart */
+.modalPopup {
+    background-color: #FFFFFF;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #0000004d;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 350px;
+    height: 50x;
+    border-radius: 12px;
+}
+
+.hiddencolumn {
+    display: none;
+}
+
+.repheader {
+    background-color: #589fdd91 !important;
+    padding: 5px;
+}
+
+.gridview {
+    background-color: #FFFFFF;
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+
+    .gridview th {
+        background: #0275d89e !important;
+        padding: 10px;
+        color: #000000;
+        border: 1px solid #FFFFFF;
+        border-radius: 10px;
+    }
+
+        .gridview th a {
+            color: #003300;
+            text-decoration: none;
+        }
+
+            .gridview th a:hover {
+                color: #003300;
+                text-decoration: underline;
+            }
+
+    .gridview td {
+        color: #333333;
+        padding: 10px;
+        border: 1px solid #FFFFFF;
+    }
+
+    .gridview tr.even td {
+        background: #000000;
+    }
+
+    .gridview td a {
+        color: #0368A2;
+        text-decoration: underline;
+    }
+
+        .gridview td a:hover {
+            color: #000000;
+        }
+
+    .gridview caption {
+        background-color: lightblue;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .gridview tr:nth-child(even) {
+        background: #f8f8f80a;
+    }
+
+    .gridview tr:nth-child(odd) {
+        background: #E6E4E4;
+    }
+
+
+/*#endregion */
+
+
+/*#region ModifySearchPopUpStart */
+.modifymodalBackground {
+    background-color: Black;
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+}
+
+.modifymodalPopup {
+    background-color: #FFFFFF;
+    width: 80%;
+    border: 3px solid #0DA9D0;
+}
+
+    .modifymodalPopup .header {
+        background-color: #2FBDF1;
+        height: 80%;
+        color: White;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .modifymodalPopup .body {
+        min-height: 50px;
+        line-height: 30px;
+        text-align: center;
+        padding: 5px;
+        height: 500px;
+    }
+
+    .modifymodalPopup .footer {
+        padding: 3px;
+    }
+
+    .modifymodalPopup .button {
+        height: 23px;
+        color: White;
+        line-height: 23px;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: #9F9F9F;
+        border: 1px solid #5C5C5C;
+    }
+
+    .modifymodalPopup td {
+        text-align: left;
+    }
+/*#endregion */

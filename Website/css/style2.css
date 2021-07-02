@@ -1,0 +1,169 @@
+/* 
+	author: istockphp.com
+*/
+#backgroundPopup
+{
+    z-index: 6;
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    top: 0px;
+    left: 0px;
+}
+
+#toPopup {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 40px solid #fff;
+	border-radius: 4px 5px 2px -65px;
+	color: #333333;
+	display: none;
+	font-size: 14px;
+	/* margin-left: -402px; */
+	position: absolute;
+	width: 44%;
+	z-index: 9999;
+	left: 472px;
+	margin-top: 17px;
+}
+/*#toPopup
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 10px solid #fff;
+    border-radius: 3px 3px 3px 3px;
+    color: #333333;
+    display: none;
+    font-size: 14px;
+    left: 50%;
+    margin-left: -402px;
+    position: fixed;
+    top: 20%;
+    width: 800px;
+    z-index: 9999;
+}*/
+#toPopup1
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 10px solid #fff;
+    border-radius: 3px 3px 3px 3px;
+    color: #333333;
+    display: none;
+    font-size: 14px;
+    left: 50%;
+    margin-left: -402px;
+    position: fixed;
+    top: 20%;
+    width: 800px;
+    z-index: 9999;
+}
+#toPopup2
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 10px solid #fff;
+    border-radius: 3px 3px 3px 3px;
+    color: #333333;
+    display: none;
+    font-size: 14px;
+    left: 50%;
+    margin-left: -402px;
+    position: fixed;
+    top: 20%;
+    width: 800px;
+    z-index: 9999;
+}
+#toPopup3
+{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 10px solid #fff;
+    border-radius: 3px 3px 3px 3px;
+    color: #333333;
+    display: none;
+    font-size: 14px;
+    left: 50%;
+    margin-left: -402px;
+    position: fixed;
+    top: 20%;
+    width: 800px;
+    z-index: 9999;
+}
+div.loader
+{
+    background: url("../img/loading.gif") no-repeat scroll 0 0 transparent;
+    height: 32px;
+    width: 32px;
+    display: none;
+    z-index: 9999;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    margin-left: -10px;
+}
+div.close
+{
+    background: url("../img/closebox.png") no-repeat scroll 0 0 transparent;
+    bottom: 24px;
+    cursor: pointer;
+    float: right;
+    height: 30px;
+    left: 27px;
+    position: relative;
+    width: 30px;
+}
+span.ecs_tooltip
+{
+    background: none repeat scroll 0 0 #000000;
+    border-radius: 2px 2px 2px 2px;
+    color: #FFFFFF;
+    display: none;
+    font-size: 11px;
+    height: 16px;
+    opacity: 0.7;
+    padding: 4px 3px 2px 5px;
+    position: absolute;
+    right: -62px;
+    text-align: center;
+    top: -51px;
+    width: 93px;
+}
+span.arrow
+{
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 7px solid #000000;
+    display: block;
+    height: 1px;
+    left: 40px;
+    position: relative;
+    top: 3px;
+    width: 1px;
+}
+div#popup_content {
+	margin: 4px 7px;
+	/*height: 300px !important;
+	overflow: scroll;
+	background: #e9e9e9;*/
+}
+
+div#popup_content1
+{
+    margin: 4px 7px;
+    height: 300px !important;
+}
+div#popup_content2
+{
+    margin: 4px 7px;
+    height: 350px !important;
+    /*overflow: scroll;*/
+}
+div#popup_content3
+{
+    margin: 4px 7px;
+    height: 350px !important;
+    /*overflow: scroll;*/
+}
+
+#topopup2tbl tr:nth-child(even) {background: #CCC}
+#topopup2tbl tr:nth-child(odd) {background: #FFF}
+#topopup2tbl tr td:first-child {width:40%; padding:5px 8px;}
+#topopup2tbl tr td:last-child {width:50%; padding:5px 8px;}

@@ -1,0 +1,17 @@
+﻿/*Menu*/
+
+ul.menu{list-style: none;margin: 0;padding: 0;text-align:left;}
+ul.menu *{margin: 0;padding: 0;}
+ul.menu li a{display: block;color: #FFF;text-decoration: none;font-weight: bold; padding:10px 20px 10px 10px; border-right:1px solid #FFF}
+ul.menu li{position: relative;float: left;}
+ul.menu li:hover{background-color:#0095EB}
+ul.menu ul{position: absolute;top: 39px;left: -1px;display: none; list-style: none;}
+ul.menu ul li{background-color:#0095EB;position: relative;border: 1px solid #aaa; border-top: none; width: 170px;margin: 0;}
+ul.menu ul li a{display: block;padding:8px;color:#fff; border:none; font-weight:normal}
+ul.menu ul li:hover{background-color: #0095EB;}
+ul.menu ul ul{left: 170px;top: 0px;}
+
+.nitin{background:#0095EB url(../images/icon/arrowBottem.png) right center no-repeat;}
+.nitin:hover{background:#0095EB url(../images/icon/arrowBottem.png) right center no-repeat;}
+.gupta{background:#0095EB url(../images/icon/arrowRight.png) 160px center no-repeat;}
+.gupta:hover{background:#0095EB url(../images/icon/arrowRight.png) 160px center no-repeat;}
