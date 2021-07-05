@@ -30,7 +30,7 @@ public partial class Root_Retailer_payout_mysun : System.Web.UI.Page
             {
                 DataTable dt = new DataTable();
                 DataTable dtMember = (DataTable)Session["dtRetailer"];
-              //  dtMemberMaster = objMemberMaster.ManageMemberMaster("Get", Convert.ToInt32(Session["RetailerMsrNo"]));
+                var HostIp = Dns.GetHostAddresses("www.mysunshinenet.com").FirstOrDefault();
                 int msrno = Convert.ToInt32(dtMember.Rows[0]["MsrNo"]);
                 dt = Cls.select_data_dt(@"exec Set_EzulixDmr @action='instpayout', @msrno=" + msrno + "");
                 if (dt.Rows.Count > 0)
@@ -39,6 +39,7 @@ public partial class Root_Retailer_payout_mysun : System.Web.UI.Page
                     {
                         ViewState["MemberId"] = null;
                         ViewState["MsrNo"] = null;
+                        Session["IpAddress"] = HostIp;
                         ViewState["MemberId"] = dtMember.Rows[0]["MemberID"];
                         Session["TransactionPassword"] = dtMember.Rows[0]["TransactionPassword"];
                         Session["MsrNo"] = dtMember.Rows[0]["MsrNo"];
@@ -65,6 +66,7 @@ public partial class Root_Retailer_payout_mysun : System.Web.UI.Page
             Response.Redirect("~/userlogin.aspx");
         }
     }
+    
     protected void btn_dmrotp_Click(object sender, EventArgs e)
     {
         DataTable dt = new DataTable();
@@ -104,6 +106,7 @@ public partial class Root_Retailer_payout_mysun : System.Web.UI.Page
                             int res = Clsm.Cyrus_ChkEwalletBalance_BeforeTransaction(Convert.ToDecimal(txt_Amount.Text.Trim()), Convert.ToInt32(dtMember.Rows[0]["MsrNo"]));
                             if (res == 1)
                             {
+                                string ipaddress = Session["IpAddress"].ToString();
                                 Int32 unixTimestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(2020, 1, 1))).TotalSeconds;
                                 int timestamp = unixTimestamp;
                                 string sp_key = Transactionlist.SelectedValue;
@@ -137,7 +140,7 @@ public partial class Root_Retailer_payout_mysun : System.Web.UI.Page
                                         _lstparm.Add(new ParmList() { name = "@beneficiaryAccount", value = credit_account });
                                         _lstparm.Add(new ParmList() { name = "@beneficiaryIFSC", value = ifs_code });
                                         _lstparm.Add(new ParmList() { name = "@txnstatus", value = "Pending" });
-                                        _lstparm.Add(new ParmList() { name = "@transaction_types_id", value = "" });
+                                        _lstparm.Add(new ParmList() { name = "@transaction_types_id", value = ipaddress });
                                         _lstparm.Add(new ParmList() { name = "@transaction_status_id", value = "" });
                                         _lstparm.Add(new ParmList() { name = "@open_transaction_ref_id", value = sp_key });
                                         _lstparm.Add(new ParmList() { name = "@purpose", value = remarks });
@@ -148,8 +151,20 @@ public partial class Root_Retailer_payout_mysun : System.Web.UI.Page
                                         _lstparm.Add(new ParmList() { name = "@Action", value = "I" });
                                         Cls.select_data_dtNew("SET_Ezulix_PayOut_MoneyTransfer_new", _lstparm);
 
+                                        if (ipaddress =="147.139.34.181")
+                                        {
+                                            Result = PayOuts.InitiatePayouts(sp_key, debit_account, external_ref, credit_account, ifs_code, amount, latitude, longitude, endpoint_ip, bene_name, remarks, otp_auth);
+                                        }
+                                        else if(ipaddress =="147.139.5.70")
+                                        {
+                                            Result = PayOuts.InitiatePayoutsip(sp_key, debit_account, external_ref, credit_account, ifs_code, amount, latitude, longitude, endpoint_ip, bene_name, remarks, otp_auth);
+                                        }
+                                        else
+                                        {
+                                            Clsm.Wallet_MakeTransaction(memberid, Convert.ToDecimal(NetAmount), "Cr", "Inst Payout Fail Txn:-" + external_ref + "");
+                                            ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Some Error Found Server Side! Please Try Again');window.location ='payout_mysun.aspx';", true);
+                                        }
                                         //insertion end
-                                        Result = PayOuts.InitiatePayouts(sp_key, debit_account, external_ref, credit_account, ifs_code, amount, latitude, longitude, endpoint_ip, bene_name, remarks, otp_auth);
                                         if (Result != string.Empty)
                                         {
                                             DataSet ds = Deserialize(Result);
@@ -160,7 +175,7 @@ public partial class Root_Retailer_payout_mysun : System.Web.UI.Page
                                                     List<ParmList> _lstparms = new List<ParmList>();
                                                     _lstparms.Add(new ParmList() { name = "@txnstatus", value = ds.Tables["root"].Rows[0]["status"].ToString() });
                                                     _lstparms.Add(new ParmList() { name = "@status", value = ds.Tables["root"].Rows[0]["statuscode"].ToString() });
-                                                    _lstparms.Add(new ParmList() { name = "@transaction_status_id", value = ds.Tables["root"].Rows[0]["statuscode"].ToString() });
+                                                  //  _lstparms.Add(new ParmList() { name = "@transaction_status_id", value = ds.Tables["root"].Rows[0]["statuscode"].ToString() });
                                                     _lstparms.Add(new ParmList() { name = "@charged_amt", value = ds.Tables["data"].Rows[0]["charged_amt"].ToString() });
                                                     _lstparms.Add(new ParmList() { name = "@commercial_value", value = ds.Tables["data"].Rows[0]["commercial_value"].ToString() });
                                                     _lstparms.Add(new ParmList() { name = "@ipay_id", value = ds.Tables["data"].Rows[0]["ipay_id"].ToString() });
@@ -342,6 +357,7 @@ public partial class Root_Retailer_payout_mysun : System.Web.UI.Page
         return NetAmount;
     }
 
+   
     public static void SendWithVarpan(string Mobile, int Template, string[] ValueArray)
     {
         try
@@ -349,7 +365,8 @@ public partial class Root_Retailer_payout_mysun : System.Web.UI.Page
             HttpContext.Current.Response.Cache.SetCacheability(HttpCacheability.NoCache);
             WebClient client = new WebClient();
             string smsMessage = GetString(Template, ValueArray);
-            string baseurl = "http://api.msg91.com/api/sendhttp.php?authkey=350021A7vlWaaHRl2X5fe1f471P1&route=4&sender=SUNNET&mobiles=" + Mobile + "& message=" + smsMessage + "";
+            string baseurl = "http://api.msg91.com/api/sendhttp.php?authkey=198296AFda5tMRgn5a854e41&route=4&sender=EZXDMT&DLT_TE_ID=1207160975824663033&mobiles=" + Mobile + "& message=" + smsMessage + "";
+
             Stream data = client.OpenRead(baseurl);
             StreamReader reader = new StreamReader(data);
             string s = reader.ReadToEnd();
@@ -379,10 +396,10 @@ public partial class Root_Retailer_payout_mysun : System.Web.UI.Page
     }
 
     public static string[] arrTemplate = new string[]
-    {
+   {
         "Zero",
-        "Dear Customer, you need an OTP  to access Payout Transaction for Rs.@v0@ and OTP is @v1@. Never Share it with anyone.Bank Never calls to verify it."//1
-    };
+       "@v1@ is your OTP to  access DMT Transaction for Rs. @v0@  and Never Share it with anyone. Bank Never calls to verify it."//1
+   };
 
     public static string get_SMSBaseURL(string Mobile, string smsMessage, int ApiID, string Route)
     {

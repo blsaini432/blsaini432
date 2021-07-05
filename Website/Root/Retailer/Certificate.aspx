@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Azamreceipt</title>
+    <title>Vivastore</title>
     <link rel="stylesheet" href="../../css/Certificate_boostrap/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -40,7 +40,7 @@
         }
 
         .header-section {
-            padding: 70px 20px;
+            padding: 40px 20px 20px;
             box-shadow: 0 0 10px #b9b9b9;
             background: #ffc536;
         }
@@ -132,6 +132,10 @@
             background: #fa3988;
         }
 
+        .customer-bar b {
+            border-bottom: 2px solid;
+        }
+
         .box-bar li:nth-child(7) {
             background: #2276e3;
         }
@@ -156,11 +160,35 @@
 
         .certificate-heading span {
             color: #220605;
-            font-size: 38px !important;
+            font-size: 24px !important;
         }
+
+        .customer-bar p {
+            width: 58%;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 16px;
+        }
+
+            .customer-bar p span {
+                border-bottom: 2px solid #000;
+                font-size: 18px !important;
+                padding: 0 4px 2px;
+                color: #220605;
+                font-weight: 600;
+            }
 
         .certificate-heading {
             margin-top: 30px !important;
+        }
+
+        .Contact-bar {
+            text-align: left;
+            width: max-content;
+            border-top: 2px solid #000;
+            margin-top: 23px;
+            margin-left: 25px;
+            padding-top: 12px;
         }
 
         .this-bar {
@@ -171,11 +199,15 @@
         }
 
         .Contact-bar {
-            text-align: center;
+            text-align: left;
         }
 
         .Contact-right {
             text-align: center;
+            border-top: 2px solid #000;
+            padding-top: 5px;
+            width: max-content;
+            margin-top: 23px;
         }
 
         .certificate-heading .font-bar {
@@ -218,7 +250,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="bg-chgn">
                                 <div class="row d-flex align-items-center">
                                     <div class="col-md-12">
@@ -227,55 +258,42 @@
                                             <img class="position-bar" src="../../css/Certificate_boostrap/img/flipcart-logo.png">
                                         </div>
                                     </div>
-
-
                                 </div>
                                 <div class="row d-flex align-items-center">
                                     <div class="col-md-12">
                                         <div class="customer-bar top-m">
-                                            <h6 class="text-center certificate-heading"><span class="font-weight-bold ">certificate for authorization </span></h6>
+                                            <h6 class="text-center certificate-heading"><span class="font-weight-bold ">CERTIFICATE OF AUTHORIZATION </span></h6>
                                             <p class="this-bar text-center">THIS IS TO CERTIFY THAT</p>
-                                            <h6 class="text-center certificate-heading"><span class="font-weight-bold font-bar "><span class="font-size-bar">M/S <asp:Label ID="lblname" runat="server"></asp:Label></h6>
+                                            <h6 class="text-center certificate-heading"><span class="font-weight-bold ">M/S
+                                                <asp:Label ID="lblname" runat="server"></asp:Label></h6>
                                         </div>
                                     </div>
-
-
                                 </div>
-
                                 <div class="row d-flex">
                                     <div class="col-md-12">
                                         <div class="customer-bar top-m">
-
                                             <div class="customer-bar">
-
-
-                                                Address <asp:Label ID="lbladdress" runat="server"></asp:Label><p>is an Authorized Retailer of VivaStore India PVT LTD and authorized to conduct Business on its Behalf with the effect from the date of issuance.</p>
+                                                <p>
+                                                    Address
+                                                    <asp:Label ID="lbladdress" runat="server"></asp:Label>is an Authorized Retailer of <b>VivaStore India PVT LTD </b>and authorized to conduct Business on its Behalf with the effect from the date of issuance.
+                                                </p>
                                             </div>
 
                                         </div>
                                     </div>
-
-
-
                                 </div>
-                                <hr>
-
 
                                 <div class="row d-flex align-items-center">
-
-                                    <div class="col-md-6">
+                                    <div class="col-md-8">
                                         <div class="Contact-bar">
-                                            <h5 class="font-weight-bold">Date Of Issuance-
-                                                <asp:Label ID="lbldate" runat="server"></asp:Label></h5>
-                                            <h5 class="font-weight-bold">Agent Code-
-                                                <asp:Label ID="lblagentcode" runat="server" Font-Bold="true"></asp:Label></h5>
-
+                                            <h5 class="font-weight-bold">DATE OF ISSUANCE-<asp:Label ID="lbldate" runat="server" Font-Bold="true"></asp:Label></h5>
+                                            <h5 class="font-weight-bold">AGENT CODE-<asp:Label ID="lblagentcode" runat="server" Font-Bold="true"></asp:Label></h5>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                         <div class="Contact-right">
-                                            <h5 class="font-weight-bold">Issuing Authority</h5>
-                                            <h5 class="font-weight-bold">Vivastore India PVT LTD</h5>
+                                            <h5 class="font-weight-bold">ISSUING AUTHORITY</h5>
+                                            <h5 class="font-weight-bold">VivaStore India PVT LTD</h5>
 
                                         </div>
                                     </div>

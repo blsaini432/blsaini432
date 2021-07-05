@@ -2429,8 +2429,6 @@ public partial class EzulixApp_AppRechargeSource1 : System.Web.UI.Page
 
             #endregion
 
-
-
             #region Purchageservice
             if (OperationName == "Purchageservice")
             {
@@ -2722,7 +2720,6 @@ public partial class EzulixApp_AppRechargeSource1 : System.Web.UI.Page
 
 
             #endregion
-
 
             #region NewSignup
             if (OperationName == "updatertcount")
@@ -3252,17 +3249,12 @@ public partial class EzulixApp_AppRechargeSource1 : System.Web.UI.Page
         return myresponse;
     }
 
-
-
-
     protected void ReturnSucess(string message, string operationName)
     {
         DataTable dt = cls.select_data_dt("Select 1 as ResponseCode,'" + message + "' as ResponseStatus");
         string output = ConvertDataTabletoString(dt);
         Response.Write("{ " + operationName + ":" + output + "}");
     }
-
-
 
     private void RechargeDone(int HistoryID, int MsrNo, string memberid, int PackageID, string from, int OperatorID, int ProfileID, string amount, string number, string account, string TransID, string PromoTP, string discount, string PromoCode)
     {
@@ -3294,7 +3286,7 @@ public partial class EzulixApp_AppRechargeSource1 : System.Web.UI.Page
                     string output = ConvertDataTabletoString(dt);
                     Response.Write("{ Recharge:" + output + "}");
                 }
-            }
+            }-8
             else
             {
                 DataTable dt = cls.select_data_dt("Select 0 as ResponseCode,'' as TransactionID,'Contact to Admin' as Status,'' as ErrorCode,'' as OperatorRef,'" + DateTime.Now + "' as Date");
@@ -3333,7 +3325,6 @@ public partial class EzulixApp_AppRechargeSource1 : System.Web.UI.Page
         string output = ConvertDataTabletoString(dt);
         Response.Write("{ " + operationName + ":" + output + "}");
     }
-
 
     private DataSet Deserialize(string result)
     {
@@ -3649,4 +3640,5 @@ public partial class EzulixApp_AppRechargeSource1 : System.Web.UI.Page
     }
     #endregion
     #endregion
+
 }

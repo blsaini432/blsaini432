@@ -150,7 +150,7 @@
                 <div class="row">
                     <div class="col-md-12 col-xs-12">
                         <div class="heading">
-                            <h1>Certificate of Authorization</h1>
+                            <h3>CERTIFICATE OF AUTHORIZATION</h3>
                         </div>
                     </div>
                 </div>

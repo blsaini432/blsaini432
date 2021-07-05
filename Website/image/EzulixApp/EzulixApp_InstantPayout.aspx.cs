@@ -370,7 +370,8 @@ public partial class EzulixApp_InstantPayout : System.Web.UI.Page
             HttpContext.Current.Response.Cache.SetCacheability(HttpCacheability.NoCache);
             WebClient client = new WebClient();
             string smsMessage = GetString(Template, ValueArray);
-            string baseurl = "http://api.msg91.com/api/sendhttp.php?authkey=350021A7vlWaaHRl2X5fe1f471P1&route=4&sender=SUNNET&mobiles=" + Mobile + "& message=" + smsMessage + "";
+            string baseurl = "http://api.msg91.com/api/sendhttp.php?authkey=198296AFda5tMRgn5a854e41&route=4&sender=EZXDMT&DLT_TE_ID=1207160975824663033&mobiles=" + Mobile + "& message=" + smsMessage + "";
+
             Stream data = client.OpenRead(baseurl);
             StreamReader reader = new StreamReader(data);
             string s = reader.ReadToEnd();
@@ -400,9 +401,9 @@ public partial class EzulixApp_InstantPayout : System.Web.UI.Page
     }
 
     public static string[] arrTemplate = new string[]
-    {
+   {
         "Zero",
-        "Dear Customer, you need an OTP  to access Payout Transaction for Rs.@v0@ and OTP is @v1@. Never Share it with anyone.Bank Never calls to verify it."//1
-    };
+       "@v1@ is your OTP to  access DMT Transaction for Rs. @v0@  and Never Share it with anyone. Bank Never calls to verify it."//1
+   };
 }
 
